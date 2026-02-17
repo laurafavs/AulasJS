@@ -40,3 +40,23 @@ let quantosAnimais = animais.length;
 for (let y=0; y<quantosAnimais; y++){
     document.getElementById("anima").innerHTML +=animais[y] + "* ";
 }
+
+function ativar() {
+    /*document.getElementById("tempo").innerHTML = "Começou a loucura";
+    relogio = setTimeout(function () {
+        document.getElementById("tempo").innerHTML = "Executou o setTimeout";
+    }, 5000);
+}*/
+
+    tempo = setInterval(function (){
+    let cronometro = document.getElementById('tempo').innerHTML;
+    let soma = parseInt(cronometro) + 1;
+    document.getElementById('tempo').innerHTML = soma;
+    }, 1000);
+}
+
+function pararContagem() {
+    clearInterval(tempo);
+   // clearTimeout(relogio);
+    // document.getElementById("tempo").innerHTML = "Parou de contar";
+}

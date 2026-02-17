@@ -5,11 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aprendendo JS</title>
+    <style>
+        .start {
+            background: greenyellow;
+        }
+        .stop {
+            background: red;
+        }
+    </style>
 
 </head>
 
 <body>
-    <p id="test"></p><br>
+   <!--<p id="test"></p><br>
 
     <h1>Conversor de dólar</h1>
     <input placeholder="Valor em Reais" type="number">
@@ -20,7 +28,11 @@
     </select>
     <br><br>
     <p id="anima"></p>
-       
+    <br><br><br> -->
+    <h1>Cronômetro?</h1>
+    <h2 id="tempo">0</h2>
+    <button class="start" onclick="ativar()">Começar a contar</button>
+    <button class="stop" onclick="pararContagem()">PARAR TUDO</button>
 </body>
 <script src ="js/index.js">
     <p id="test"></p>
