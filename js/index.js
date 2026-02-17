@@ -1,5 +1,5 @@
 
-let day;
+/*let day;
 let date = new Date().getDay();
 
 switch (date) {
@@ -46,7 +46,7 @@ function ativar() {
     relogio = setTimeout(function () {
         document.getElementById("tempo").innerHTML = "Executou o setTimeout";
     }, 5000);
-}*/
+}
 
     tempo = setInterval(function (){
     let cronometro = document.getElementById('tempo').innerHTML;
@@ -60,3 +60,32 @@ function pararContagem() {
    // clearTimeout(relogio);
     // document.getElementById("tempo").innerHTML = "Parou de contar";
 }
+*/
+
+const user={
+    name:'Laura',
+    idade:29,
+    color: 'blue'
+}
+
+    for (let key in user){
+        console.log(`${key} : ${user[key]}`)
+    }
+
+    class Bicho{
+        constructor(a,b,c,d){
+            this.especie=a;
+            this.cor=b;
+            this.tamanho=c;
+            this.genero=d;
+        }
+        somBicho(){
+            return this.especie + " diz: Ahhhhhhhhhhh";
+        }
+    }
+
+    const mamaco = new Bicho("bunda vermelha", "marrom bombom", "pequeno", "machinho");
+    const passarinho = new Bicho("caga na picina", "amarelo", "grandinho", "mulherão");
+    const gato = new Bicho("preto", "preto", "gigante", "gay")
+
+    console.log(mamaco.somBicho());
