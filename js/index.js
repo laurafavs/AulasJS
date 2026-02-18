@@ -60,7 +60,7 @@ function pararContagem() {
    // clearTimeout(relogio);
     // document.getElementById("tempo").innerHTML = "Parou de contar";
 }
-*/
+
 
 const user={
     name:'Laura',
@@ -89,3 +89,10 @@ const user={
     const gato = new Bicho("preto", "preto", "gigante", "gay")
 
     console.log(mamaco.somBicho());
+*/
+
+let data = new Date();
+//console.log(data);
+
+let mes = data.getMonth();
+console.log(mes);
