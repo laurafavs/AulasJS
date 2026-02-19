@@ -91,8 +91,18 @@ const user={
     console.log(mamaco.somBicho());
 */
 
-let data = new Date();
+//let data = new Date();
 //console.log(data);
 
-let mes = data.getMonth();
-console.log(mes);
+//let mes = data.getMonth();
+//console.log(mes);
+
+//Quantos dias faltam para acabar o ano??
+
+let dataHoje= new Date();
+let dataFinal= new Date(2026,11,31);
+
+let diferencaTempo= dataFinal.getTime() - dataHoje.getTime();
+let diferencaDias = Math.ceil(diferencaTempo / (24*60*60*1000));
+
+console.log(diferencaDias + " dias");
